@@ -1,0 +1,116 @@
+#content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#top {
+    height: 100%;
+    background-image: url("../images/header.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#top h1 {
+    color: var(--dark-text-color);
+}
+
+.room-image-holder {
+    min-height: 250px;
+    height: auto;
+    background-image: url("../images/image.jpg");
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about {
+    background-color: var(--light-color);
+    color: var(--dark-text-color);
+    padding: 30px 0;
+}
+
+#about .about-title {
+    color: var(--dark-color);
+}
+
+#about .about-icon {
+    width: 100px;
+}
+
+#about .aboutBox {
+    margin: 10px 0;
+}
+
+#categories {
+    background-color: var(--light-text-color);
+    width: 100%;
+    overflow: hidden;
+}
+
+.categoriesHeader {
+    color: var(--dark-text-color);
+    margin: 0;
+    padding: 20px 0;
+}
+
+.categoryItems {
+    height: 750px;
+    overflow: hidden;
+}
+
+.category {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--dark-color);
+    color: var(--light-text-color);
+    transition: transform .5s;
+}
+
+.category.bathroom {
+    background-image: url("../images/bathroom.jpg");
+}
+
+.category.kitchen {
+    background-image: url("../images/kitchen.jpg");
+}
+
+.category.bed {
+    background-image: url("../images/bedroom.jpg");
+}
+
+.category.living {
+    background-image: url("../images/livingroom.jpg");
+}
+
+.categoryDark {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: .5s;
+}
+
+.category:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.category:hover .categoryDark {
+    opacity: 0;
+}
+
+#footer {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 980px) {
+    .categoryItems {
+        height: 100vh;
+    }
+    .category {
+        height: 25%;
+    }
+}
